@@ -1,18 +1,18 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: calculator-deployment
+  name: grade-deployment
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: calculator
+      app: grade
   template:
     metadata:
       labels:
-        app: calculator
+        app: grade
     spec:
       containers:
-      - name: calculator-container
-        image: sabishekkrishna/calculator-app:v2.0
+      - name: grade-container
+        image: sabishekkrishna/grade-app:v1.0
         imagePullPolicy: Always
