@@ -13,13 +13,13 @@ def average(m1,m2,m3,m4):
 def grade_cal(avg):
     if avg >= 90:
         return 'S'
-    else if avg >= 80:
+    elif avg >= 80:
         return 'A'
-    else if avg >= 70:
+    elif avg >= 70:
         return 'B'
-    else if avg >= 60:
+    elif avg >= 60:
         return 'C'
-    else if avg >= 50:
+    elif avg >= 50:
         return 'D'
     else:
         return 'F'
